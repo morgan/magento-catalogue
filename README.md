@@ -27,3 +27,7 @@ This extension accomplishes the following:
 ```php
 <?php echo $this->getChildHtml('topManufacturers') ?>
 ```
+
+## Version 0.1.0
+
+This is release version 0.1.0 of [Catalogue](https://github.com/morgan/magento-catalogue).
