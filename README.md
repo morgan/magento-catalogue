@@ -8,7 +8,7 @@ This extension accomplishes the following:
 
 ## Implement Manufacturer Navigation Drop-down
 
-1. In "app/design/frontend/default/{name-of-theme}/layout/page.xml"
+1. In `app/design/frontend/default/{name-of-theme}/layout/page.xml`
 
 2. Find the following block:
 
@@ -22,7 +22,7 @@ This extension accomplishes the following:
 <block type="core/template" name="top_brand" as="topManufacturers" template="magnifystudio-catalogue/navigation/manufacturers.phtml" />
 ```
 
-4. In "app/design/frontend/default/{name-of-theme}/template/page/html/header.phtml", place the following where the menu is desired. Keep in mind that this is a plain list and requires styling.
+4. In `app/design/frontend/default/{name-of-theme}/template/page/html/header.phtml`, place the following where the menu is desired. Keep in mind that this is a plain list and requires styling.
 
 ```php
 <?php echo $this->getChildHtml('topManufacturers') ?>
