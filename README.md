@@ -12,12 +12,18 @@ This extension accomplishes the following:
 
 2. Find the following block:
 
-	<block type="page/html_header" name="header" as="header">
+```xml
+<block type="page/html_header" name="header" as="header">
+```
 
 3. Copy the following line inside the block:
 
-	<block type="core/template" name="top_brand" as="topManufacturers" template="magnifystudio-catalogue/navigation/manufacturers.phtml" />
+```xml
+<block type="core/template" name="top_brand" as="topManufacturers" template="magnifystudio-catalogue/navigation/manufacturers.phtml" />
+```
 
 4. In "app/design/frontend/default/{name-of-theme}/template/page/html/header.phtml", place the following where the menu is desired. Keep in mind that this is a plain list and requires styling.
 
-	<?php echo $this->getChildHtml('topManufacturers') ?>
+```php
+<?php echo $this->getChildHtml('topManufacturers') ?>
+```
