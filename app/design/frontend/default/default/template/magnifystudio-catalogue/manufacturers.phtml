@@ -1,0 +1,29 @@
+<?php
+/**
+ * Catalogue Manufacturers
+ * 
+ * @package		Catalogue
+ * @author		Micheal Morgan <micheal@morgan.ly>
+ * @copyright	(c) 2014 Micheal Morgan
+ * @license		MIT
+ */
+	$product = Mage::getModel('catalog/product');
+	
+	$attributes = Mage::getResourceModel('eav/entity_attribute_collection')
+		->setEntityTypeFilter($product->getResource()->getTypeId())
+		->addFieldToFilter('attribute_code', 'manufacturer');
+		
+	$attribute = $attributes->getFirstItem()->setEntity($product->getResource());
+	
+	$manufacturers = $attribute->getSource()->getAllOptions(false);
+?>
+
+	<div class="page-head">
+		<h3><?php echo $this->__('Manufacturers') ?></h3>
+	</div>
+
+	<ul>
+		<?php foreach ($manufacturers as $manufacturer): ?> 
+			<li><a href="<?php echo Mage::getURL(), 'catalogue/?manufacturer=', $manufacturer['value']; ?>"><?php echo $manufacturer['label'] ?></a></li>
+		<?php endforeach; ?>
+	</ul> 
