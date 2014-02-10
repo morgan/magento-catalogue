@@ -6,6 +6,22 @@ This extension accomplishes the following:
 - Manufacturers page that lists and links to their corresponding products
 - Block helper for implementing manufacturer drop-down for header navigation
 
+## Live Demo
+
+- All products with layered navigation: http://dev.morgan.ly/magento/1.8.1/catalogue/
+- List of manufacturers linking to correlated products: http://dev.morgan.ly/magento/1.8.1/catalogue/manufacturers/
+- Dropdown navigation listing manufacturers: http://dev.morgan.ly/magento/1.8.1/
+
+## Installation
+
+1. Extract into root of Magento installation
+2. Login to Magento Admin Panel. Go to "Catalog" -> "Manage Categories"
+3. Select the root category. Under "Display Settings", set "Is Anchor" to "Yes"
+4. Below are the URLs on the front-end:
+  - http://your-store.com/catalogue
+  - http://your-store.com/catalogue/manufacturers
+5. If interested in having manufacturuers/brands listed in navigation, see implementation instructions below.
+
 ## Implement Manufacturer Navigation Drop-down
 
 1. In `app/design/frontend/default/{name-of-theme}/layout/page.xml`
