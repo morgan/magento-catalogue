@@ -4,7 +4,7 @@ This extension accomplishes the following:
 
 - Ability for user to browse all products on the front-end with layered navigation
 - Manufacturers page that lists and links to their corresponding products
-- Block helper for implementing manufacturer drop-down for header navigation
+- Block helper for implementing manufacturer drop-down for header navigation into custom theme
 
 ## Live Demo
 
@@ -19,9 +19,10 @@ This extension accomplishes the following:
 4. Below are the URLs on the front-end:
   - http://your-store.com/catalogue
   - http://your-store.com/catalogue/manufacturers
-5. If interested in having manufacturuers/brands listed in navigation, see implementation instructions below.
+5. If interested in having manufacturers/brands listed in navigation, see implementation instructions below.
 
 ## Implement Manufacturer Navigation Drop-down
+This will produce an unstyled list of manufacturers best for integration of into a custom theme. If you need to customize the list HTML, you can either use JavaScript or take a look at replicating and customizing `magnifystudio-catalogue/navigation/manufacturers.phtml`.
 
 1. In `app/design/frontend/default/{name-of-theme}/layout/page.xml`
 
