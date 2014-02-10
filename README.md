@@ -9,8 +9,7 @@ This extension accomplishes the following:
 ## Live Demo
 
 - All products with layered navigation: http://dev.morgan.ly/magento/1.8.1/catalogue/
-- List of manufacturers linking to correlated products: http://dev.morgan.ly/magento/1.8.1/catalogue/manufacturers/
-- Dropdown navigation listing manufacturers: http://dev.morgan.ly/magento/1.8.1/
+- List of manufacturers linking to their products: http://dev.morgan.ly/magento/1.8.1/catalogue/manufacturers/
 
 ## Installation
 
