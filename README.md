@@ -22,7 +22,7 @@ This extension accomplishes the following:
 5. If interested in having manufacturers/brands listed in navigation, see implementation instructions below.
 
 ## Implement Manufacturer Navigation Drop-down
-This will produce an unstyled list of manufacturers best for integration of into a custom theme. If you need to customize the list HTML, you can either use JavaScript or take a look at replicating and customizing `magnifystudio-catalogue/navigation/manufacturers.phtml`.
+This will produce an unstyled list of manufacturers best for integration into a custom theme. If you need to customize the list HTML, you can either use JavaScript or take a look at replicating and customizing `magnifystudio-catalogue/navigation/manufacturers.phtml`.
 
 1. In `app/design/frontend/default/{name-of-theme}/layout/page.xml`
 
